@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Inner9 에니어그램 36문항 검사로 나의 행동 뒤에 숨은 동기를 살펴보세요.">
+<title>Inner9 - 나를 알아가는 9가지 성격유형</title>
+<style>
+:root{--ink:#252043;--muted:#645e78;--purple:#5e42b7;--deep:#472e96;--line:#e5def1;--paper:#fbfaff;--soft:#f1ebfc;--white:#fff;--shadow:0 12px 36px #3526610b;color:var(--ink);font-family:"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;font-size:15px;line-height:1.65}
+*{box-sizing:border-box}body{margin:0;background:var(--paper)}[hidden]{display:none!important}html{scroll-behavior:smooth;scroll-padding-top:86px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.35;letter-spacing:-.045em}h1{font-size:clamp(30px,4.2vw,36px)}h2{font-size:24px}h3{font-size:18px}p{color:var(--muted)}small,.small{font-size:13px;color:var(--muted)}a{color:var(--deep)}button,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:default}a:focus-visible,button:focus-visible,summary:focus-visible,label:has(input:focus-visible){outline:3px solid #7855df;outline-offset:4px}.wrap{width:min(1120px,calc(100% - 48px));margin-inline:auto}.skip{position:fixed;left:12px;top:-100px;z-index:10;background:white;padding:8px}.skip:focus{top:8px}.header{position:sticky;top:0;z-index:5;background:#fffffffa;border-bottom:1px solid var(--line)}.nav-wrap,.brand,nav,.actions{display:flex;align-items:center}.nav-wrap{min-height:68px;justify-content:space-between;gap:20px}.brand{gap:9px;text-decoration:none;color:var(--ink);font-size:21px;font-weight:850;letter-spacing:-.06em}.brand i{display:grid;place-items:center;width:31px;height:31px;border-radius:10px;background:var(--deep);color:white;font-size:20px;font-style:normal}nav,.actions{gap:10px;flex-wrap:wrap}nav a{padding:7px 11px;text-decoration:none;color:var(--muted);font-size:14px;font-weight:700;border-radius:8px}nav a[aria-current]{color:var(--deep);background:var(--soft)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 17px;border:1px solid transparent;border-radius:10px;line-height:1.35;font-weight:750;font-size:14px;text-decoration:none;transition:background .18s,transform .18s,color .18s,border-color .18s}.btn:active:not(:disabled){transform:scale(.98)}.primary,nav a.primary{background:var(--purple);color:white}.primary:hover,nav a.primary[aria-current]{background:var(--deep);color:white}.secondary{background:white;border-color:#dcd2ee;color:var(--deep)}.secondary:hover{background:var(--soft)}.quiet{background:transparent;color:var(--deep);padding-inline:9px}.menu{display:none}.hero{background:radial-gradient(ellipse at 82% 28%,#eae0ff 0,transparent 52%),linear-gradient(115deg,#fcfaff,#f2edfd);border-bottom:1px solid var(--line);padding:48px 0 30px}.hero-grid{display:grid;grid-template-columns:1fr .87fr;align-items:center;gap:35px}.eyebrow{color:var(--deep);font-weight:800;font-size:12px;letter-spacing:.13em}.hero h1{margin:12px 0 17px}.hero h1 span{display:block;color:var(--purple)}.hero p{max-width:46ch}.hero .actions{margin-top:25px}.wheel{display:grid;place-items:center;margin:0;min-width:0}.wheel svg{width:min(100%,335px);height:auto;overflow:visible}.facts,.cards,.duo,.top-three{display:grid;gap:15px}.facts{grid-template-columns:repeat(4,1fr);margin-top:24px}.fact{padding:12px 15px;background:#ffffffbe;border:1px solid #fff;border-radius:13px;display:flex;align-items:center;gap:11px}.fact b{color:var(--deep);font-size:21px;white-space:nowrap;letter-spacing:-.05em}.fact span{font-size:13px;color:var(--muted)}
+section.content{padding:54px 0}.heading{margin-bottom:22px}.heading h2{margin-top:4px}.heading p{margin-top:8px}.duo{grid-template-columns:repeat(2,minmax(0,1fr))}.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.card,.panel{padding:23px;background:white;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);min-width:0}.card p,.panel p{margin-top:8px}.type-card{transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column;align-items:flex-start}.type-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #39236916}.type-card h3{display:flex;align-items:center;gap:10px}.number{background:var(--soft);color:var(--deep);width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-variant-numeric:tabular-nums}.tags{display:flex;gap:5px;flex-wrap:wrap;margin:14px 0 9px}.tags span,.pill{background:var(--soft);color:var(--deep);font-size:12px;font-weight:700;padding:3px 8px;border-radius:20px}.type-card button{margin-top:auto}.notice{margin-top:17px;background:#f2edfc;border-radius:12px;padding:14px 17px;color:#51476a}.guide{background:#f3eefc;border-block:1px solid var(--line)}.guide ol{padding-left:25px;margin:9px 0}.guide li+li{margin-top:5px}.guide .actions{margin-top:20px}.footer{border-top:1px solid var(--line);padding:20px 0}.footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.footer p{font-size:13px}.flow{min-height:74vh;padding:38px 0 55px}.flow-inner{width:min(100%,725px);margin:auto}.flow .home-link{margin-bottom:14px}.flow h1{font-size:25px}.flow header p{margin-top:6px}.flow .panel{padding:clamp(16px,4vw,32px)}.step-info{display:flex;justify-content:space-between;gap:15px;font-size:13px;color:var(--deep);font-weight:750}.track{height:7px;background:#eee8f6;border-radius:20px;overflow:hidden;margin:8px 0 22px}.fill{height:100%;background:linear-gradient(90deg,#7856cf,#a282e0);border-radius:inherit;transition:width .25s}.options{border:0;padding:0;margin:16px 0 20px;min-width:0;display:grid;gap:8px}.options legend{font-size:20px;font-weight:800;line-height:1.5;margin-bottom:12px;padding:0}.option{display:flex;align-items:center;gap:11px;border:1px solid var(--line);padding:10px 12px;border-radius:10px;min-height:45px;cursor:pointer;transition:background .16s,border-color .16s}.option:hover,.option:has(input:checked){background:var(--soft);border-color:#a68cdb}.option input{accent-color:var(--purple);width:17px;height:17px;flex:none;margin:0}.flow-actions{justify-content:space-between}.report-head{border:1px solid var(--line);background:radial-gradient(ellipse at 90% 0,#e3d5ff,transparent 62%),#f4eefa;padding:clamp(21px,5vw,44px);border-radius:20px}.report-head h1{font-size:46px;color:var(--deep);margin:5px 0}.report-head h1 span{font-size:21px;color:var(--ink);display:block}.report-head .summary{font-size:16px;margin:9px 0}.report-section{margin-top:27px}.report-section h2{margin-bottom:13px}.score-row{display:grid;grid-template-columns:minmax(90px,145px) 1fr 52px;align-items:center;gap:8px;padding:4px 0;font-size:13px}.score-row b:last-child{text-align:right}.score-row .track{margin:0;height:10px}.score-row .fill{background:#aa94d7;animation:grow .55s ease-out;transform-origin:left}.score-row[data-top] .fill{background:#8666cd}.score-row[data-main]{color:var(--deep);font-weight:800}.score-row[data-main] .fill{background:var(--deep)}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}.top-three{grid-template-columns:repeat(3,minmax(0,1fr));margin:13px 0}.top-three .card{padding:10px 13px}.report-section .actions{margin-top:14px}dialog{width:min(620px,calc(100% - 24px));max-height:86vh;border:1px solid var(--line);border-radius:16px;padding:24px;color:var(--ink);box-shadow:0 20px 80px #1e153e55}dialog::backdrop{background:#21173e88}.dialog-head{display:flex;justify-content:space-between;align-items:center;gap:12px}dl{margin-bottom:0}dt{font-weight:800;color:var(--deep);margin-top:12px}dd{margin:2px 0 0;color:var(--muted)}.status:not(:empty){margin-top:10px}
+@media(max-width:880px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.fact{flex-wrap:wrap;gap:2px 8px}}
+@media(max-width:740px){.wrap{width:calc(100% - 32px)}.menu{display:inline-flex}nav{display:none;position:absolute;top:100%;left:0;right:0;padding:10px 16px 15px;background:white;box-shadow:var(--shadow);border-bottom:1px solid var(--line)}nav.open{display:grid}nav a.primary{justify-self:start}.hero{padding-top:34px}.hero-grid{gap:12px}.wheel svg{width:min(100%,255px)}}
+@media(max-width:560px){.hero-grid,.duo,.cards{grid-template-columns:1fr}.hero-grid{gap:10px}.facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:8px}.wheel svg{width:min(100%,230px)}.fact{padding:10px}.fact b{font-size:18px}.top-three{gap:6px}.top-three .card{padding:8px;font-size:13px}section.content{padding:40px 0}.flow{padding-top:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Portraits in the result report */
+.people-grid{align-items:stretch}
+.person-card{display:grid;grid-template-columns:minmax(0,37%) minmax(0,1fr);align-items:start;gap:clamp(12px,2.4vw,22px)}
+.person-media{position:relative;display:grid;place-items:center;aspect-ratio:4/5;overflow:hidden;border-radius:11px;background:radial-gradient(ellipse at 24% 10%,#f9f5ff,#e8dcfa);box-shadow:0 3px 13px #33236018;color:var(--deep);text-align:center}
+.person-placeholder{padding:8px;font-size:13px;font-weight:800;line-height:1.35;overflow-wrap:anywhere}
+.person-media img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 30%;transition:transform .24s ease}
+.person-card:hover .person-media img{transform:scale(1.045)}
+.person-card h3{margin-top:7px}
+.person-credit{font-size:12px;line-height:1.55;overflow-wrap:anywhere}
+.person-credit a{text-underline-offset:2px}
+@media(max-width:560px){.person-card{grid-template-columns:minmax(0,34%) minmax(0,1fr);padding:15px}}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#home">본문으로 이동</a>
+<header class="header">
+  <div class="wrap nav-wrap">
+    <a class="brand" href="#home" aria-label="Inner9 홈"><i aria-hidden="true">✧</i>Inner9</a>
+    <button class="btn secondary menu" type="button" aria-controls="nav" aria-expanded="false">☰ 메뉴</button>
+    <nav id="nav" aria-label="주 메뉴">
+      <a href="#home">홈</a><a href="#about">에니어그램 소개</a><a href="#types">9가지 유형</a><a href="#how">검사 안내</a><a class="btn primary" href="#test">검사 시작 ↗</a>
+    </nav>
+  </div>
+</header>
+<main id="landing">
+  <section class="hero" id="home" aria-labelledby="home-title">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div><p class="eyebrow" lang="en">DISCOVER YOUR INNER SELF</p>
+          <h1 id="home-title">나를 이해하는 <span>9가지 성격유형</span></h1>
+          <p>나의 행동 뒤에 숨겨진 동기와 성향을 탐색해 보세요. 에니어그램의 9가지 유형을 통해 자신을 이해하는 시간을 가져보세요.</p>
+          <div class="actions"><a class="btn primary" href="#test">검사 시작하기 ↗</a><a class="btn secondary" href="#about">에니어그램 알아보기 ↓</a><a class="btn quiet" href="#result" data-saved hidden>최근 결과 보기 →</a></div>
+        </div>
+        <figure class="wheel" aria-label="아홉 유형의 숫자가 원형으로 배열된 에니어그램 도형"><svg id="wheel" viewBox="0 0 330 320" aria-hidden="true"></svg></figure>
+      </div>
+      <div class="facts"><div class="fact"><b>36</b><span>검사 문항</span></div><div class="fact"><b>9</b><span>성격유형</span></div><div class="fact"><b>18</b><span>날개 조합</span></div><div class="fact"><b>5–7분</b><span>예상 소요 시간</span></div></div>
+    </div>
+  </section>
+  <section class="wrap content" id="about" aria-labelledby="about-title">
+    <div class="heading"><p class="eyebrow">에니어그램 소개</p><h2 id="about-title">같은 행동에도 서로 다른 동기가 있어요</h2></div>
+    <div class="duo">
+      <article class="card"><h3>에니어그램이란?</h3><p>에니어그램은 사람이 반복해서 보이는 동기와 반응을 아홉 가지 유형으로 살펴보는 틀이에요. 예를 들어 같은 일을 꼼꼼히 마쳐도, 한 사람은 기준을 지키고 싶어서, 다른 사람은 예상 밖의 문제를 줄이고 싶어서 그렇게 할 수 있어요.</p><p>무엇을 자주 하는지와 함께 무엇을 원하고 무엇을 두려워하는지 살펴보세요. 최근 마음에 남은 선택을 떠올리며 “그때 내게 어떤 점이 중요했을까?”라고 물어보면 자신의 반복되는 패턴을 알아차리는 데 도움이 돼요.</p></article>
+      <article class="card"><h3>날개유형이란?</h3><p>날개는 기본 유형에 이웃한 두 유형 중 한쪽의 특징이 더 두드러지는 경향을 뜻해요. 번호는 원을 따라 이어지므로 1번의 양옆은 9번과 2번이에요.</p><p>예를 들어 5w4와 5w6은 모두 탐구자예요. 5w4는 분석을 자기만의 표현과 연결하는 경향을, 5w6은 분석을 검증과 대비에 활용하는 경향을 보일 수 있어요.</p><p class="small"><a href="https://www.enneagraminstitute.com/how-the-enneagram-system-works/" target="_blank" rel="noopener noreferrer">참고 · 에니어그램 인스티튜트</a></p></article>
+    </div>
+    <p class="notice small">Inner9는 에니어그램 이론을 바탕으로 자체 제작한 비공식 자기탐색 검사예요. 정식 심리검사나 의학적·심리학적 진단으로 사용할 수 없으며, 결과는 현재 응답 경향을 이해하는 참고 자료입니다.</p>
+  </section>
+  <section class="wrap content" id="types" aria-labelledby="types-title">
+    <div class="heading"><h2 id="types-title">9가지 성격유형</h2><p>각 유형의 핵심 동기와 관계에서 나타날 수 있는 모습을 살펴보세요.</p></div>
+    <div class="cards" id="type-cards"></div>
+  </section>
+  <section class="guide content" id="how" aria-labelledby="how-title">
+    <div class="wrap"><div class="heading"><h2 id="how-title">검사 안내</h2></div>
+      <div class="duo">
+        <article class="card"><h3>응답하는 방법</h3><ol><li>36문항에 한 문항씩 응답해요.</li><li>평소 모습과 가장 가까운 답을 5점 척도에서 골라요.</li><li>정답과 오답은 없어요. 실제로 자주 보이는 반응을 솔직하게 골라 보세요.</li></ol></article>
+        <article class="card"><h3>결과를 읽는 방법</h3><p>유형별 4문항을 합산해 4–20점으로 표시하고, 그래프에서는 (원점수 − 4) ÷ 16 × 100으로 환산해요. 환산점수는 응답 경향을 표현하며 확률이나 백분위로 해석할 수 없어요.</p><p>가장 높은 유형과 양옆 유형의 응답을 바탕으로 기본 유형과 날개를 추정해요. 동점이면 추가 질문을 통해 가까운 설명을 찾아요.</p></article>
+      </div>
+      <div class="actions"><a class="btn primary" href="#test">지금 검사 시작하기 ↗</a><a class="btn secondary" href="#result" data-saved hidden>저장된 결과 다시 보기</a></div>
+    </div>
+  </section>
+</main>
+<main class="flow wrap" id="flow" hidden></main>
+<footer class="footer"><div class="wrap"><p><b>Inner9</b> · 나를 알아가는 9가지 성격유형</p><button type="button" class="btn quiet" data-action="clear">검사 데이터 초기화</button></div><p class="wrap status" id="storage-status" role="status"></p></footer>
+<dialog id="type-dialog" aria-labelledby="dialog-title"><div class="dialog-head"><h2 id="dialog-title"></h2><form method="dialog"><button class="btn secondary">닫기</button></form></div><div id="dialog-body"></div></dialog>
+<noscript><p class="wrap notice">검사를 이용하려면 브라우저에서 자바스크립트를 활성화해 주세요.</p></noscript>
+<script>
+
+'use strict';
+
+const detailLabels = ['전체 성격 특징','핵심 욕구','핵심 두려움','강점','주의해야 할 행동 패턴','대인관계 특징','스트레스 상황에서 나타나는 경향','성장 방향','자기이해를 위한 조언'];
+const types = [null,
+ {name:'개혁가', tags:['원칙','정확성','개선'], summary:'자신이 옳다고 믿는 기준을 생활 속에서 실천해요.',
+  detail:['무엇이 제대로 작동하고 무엇을 고칠 수 있는지 빠르게 구분해요. 작은 일에도 일관된 기준을 세우면 마음이 놓여요.','스스로 납득할 수 있는 기준에 따라 정직하게 행동하고 싶어요.','자신의 잘못을 알아차리지 못하거나 중요하게 여기는 기준을 어길까 봐 걱정해요.','다른 사람이 놓친 오류를 발견하고, 추상적인 원칙을 구체적인 절차로 바꾸는 데 능해요.','충분히 잘 마친 일도 부족한 부분부터 보일 수 있어요. 개선할 부분을 말하기 전에 이미 잘된 점을 짚어 보세요.','약속을 성실하게 지키면서 신뢰를 쌓아요. 상대는 세심한 조언을 기대하기도 하고 평가받는 느낌을 받을 수도 있어요.','일이 어긋나면 더 엄격한 기준으로 통제하려 하거나 수고를 몰라준다는 서운함이 올라올 수 있어요.','필수 기준과 취향을 구분하고, 중요도가 낮은 일에는 완료 조건을 하나만 정해 보세요.','최근 스스로에게 했던 지적을 떠올려 보세요. 친구에게도 같은 말투로 이야기할지 생각해 보세요.'],
+  q:['내가 맡은 일에 작은 오류가 보여도 원래 정한 기준에 맞게 고친 뒤 넘기고 싶다.','모두가 편하게 넘어가려는 일에서도 절차가 공정했는지 마음에 남는다.','급히 끝낸 일을 돌아볼 때 성과보다 내가 중요하게 여기는 기준을 지켰는지 먼저 생각한다.','일을 나눌 때 나이나 직급과 관계없이 같은 기준이 적용되는지 살핀다.']},
+ {name:'조력가',tags:['공감','돌봄','연결'],summary:'상대에게 필요한 도움을 알아차리며 관계를 돌봐요.',
+  detail:['말로 표현되지 않은 필요를 감지하고 먼저 곁을 내주는 편이에요. 상대의 하루가 나아졌다는 느낌이 큰 힘이 돼요.','사람들과 따뜻하게 연결되고, 관계 안에서 내가 소중한 존재임을 느끼고 싶어요.','아무에게도 필요하거나 소중한 사람이 아니라고 느끼는 것이 어려워요.','혼자 버티는 사람을 알아보고 부담을 덜 수 있는 구체적인 행동을 제안해요.','부탁을 받아들이기 전에 나에게 남은 시간과 에너지를 점검해 보세요. 도움 뒤에 기대하는 반응이 있는지도 살펴볼 수 있어요.','사람마다 편해하는 방식과 좋아하는 것을 잘 기억해요. 서로 돌봄을 주고받는 관계에서 여유를 느껴요.','과하게 챙기다가 지치면 자신의 노력이 당연하게 받아들여진다는 서운함이 커질 수 있어요.','도움을 제안하기 전에 상대가 원하는지 묻고 자신의 필요도 말해 보세요.','오늘 내가 받아도 좋을 도움 한 가지를 정해 가까운 사람에게 직접 부탁해 보세요.'],
+  q:['함께 있는 사람이 기운 없어 보이면 이유를 묻거나 작은 도움을 건네고 싶다.','내 일정이 빠듯해도 가까운 사람이 내 도움을 기대하면 시간을 내는 쪽으로 마음이 기운다.','같이 보낸 시간이 끝나면 내가 상대에게 충분히 마음을 써 주었는지 떠올린다.','고맙다는 말을 듣지 못했을 때 내 도움이 상대에게 정말 닿았는지 신경이 쓰인다.']},
+ {name:'성취자',tags:['목표','추진력','적응'],summary:'선명한 목표를 세우고 눈에 보이는 진전을 만들어 가요.',
+  detail:['해야 할 일을 목표와 이정표로 바꾸는 데 익숙해요. 결과가 보이기 시작하면 더 많은 에너지가 생겨요.','자신의 능력이 실제로 가치 있는 성과를 만든다는 느낌을 원해요.','아무것도 이루지 못해 자신의 가치까지 낮게 평가될까 봐 걱정해요.','우선순위를 빠르게 잡고 상황에 맞게 방식을 조정해 일을 완수해요.','성과가 보이지 않는 쉼이나 탐색을 뒤로 미룰 수 있어요. 결과가 나오기 전에 과정에서 배운 점도 기록해 보세요.','함께 목표를 정하고 상대의 역량을 알아봐 줄 때 관계가 활기차요. 해결책보다 경청을 원하는 순간에는 한 박자 기다려 보세요.','압박이 커지면 일정을 더 촘촘히 채우고 피곤함이나 실망감을 뒤늦게 알아차릴 수 있어요.','성과와 별개로 중요한 가치를 정하고, 매주 그 가치에 시간을 조금 내 보세요.','오늘의 성과 목록 옆에 “그 일에서 나는 어떤 기분이었나?”를 한 줄 적어 보세요.'],
+  q:['새 과제를 받으면 결과를 확인할 수 있는 목표부터 만들면 힘이 난다.','진척이 눈에 잘 보이지 않는 일에서는 내가 얼마나 잘하고 있는지 확인하고 싶다.','발표를 준비할 때 내가 기여한 부분이 분명하게 전달되도록 신경 쓴다.','기대한 결과가 나오지 않으면 먼저 접근 방식을 바꿔 다음 성과를 만들 방법을 찾는다.']},
+ {name:'개인주의자',tags:['진정성','감수성','표현'],summary:'감정의 결을 섬세하게 읽고 자기만의 방식으로 표현해요.',
+  detail:['평범한 장면에서도 감정과 의미의 차이를 느껴요. 그 경험을 글, 대화, 취향 같은 자신만의 언어로 풀어낼 때 자신을 더 잘 이해해요.','내가 누구인지 알고, 내 경험과 감정을 있는 그대로 표현하고 싶어요.','고유한 정체성이 흐려지거나 중요한 감정을 아무도 이해하지 못할까 봐 걱정해요.','복잡한 감정에 적절한 이름을 붙이고 익숙한 장면을 새로운 관점으로 보여 줘요.','다른 사람에게 있어 보이는 것을 부러워하다가 내게 이미 있는 자원을 놓칠 수 있어요.','깊은 대화와 섬세한 반응에서 친밀함을 느껴요. 기분을 알아주기를 기다리는 대신 원하는 것을 직접 말하면 오해가 줄어요.','감정에 깊이 들어가며 지금의 기분이 앞으로도 계속될 것처럼 느낄 수 있어요.','감정의 의미는 존중하면서 식사나 산책처럼 몸이 의지할 일상 리듬도 챙겨 보세요.','오늘의 기분을 한 문장으로 쓰고, 그 기분 속에서도 할 수 있는 작은 행동을 하나 적어 보세요.'],
+  q:['사소해 보이는 순간에도 그때의 내 기분을 정확한 말로 표현하고 싶어진다.','잘 어울린다는 말을 들어도 내 모습이 제대로 이해되지 않았다고 느끼면 마음에 남는다.','물건이나 작업 방식을 고를 때 내 취향과 경험이 드러나는 쪽이 끌린다.','다른 사람의 경험을 들으면 내 삶에는 어떤 의미나 색이 있는지 돌아보게 된다.']},
+ {name:'탐구자',tags:['호기심','집중','독립'],summary:'한 걸음 물러나 관찰하고 복잡한 것의 구조를 파악해요.',
+  detail:['여러 정보를 모아 일관된 설명이 만들어질 때까지 생각을 이어가요. 혼자 집중할 시간과 범위가 명확할 때 편안해요.','필요한 지식과 역량을 갖추고 자기 시간과 에너지를 스스로 관리하고 싶어요.','준비가 부족한 채 요구를 감당해야 하거나 자원이 고갈될까 봐 걱정해요.','잡음에서 중요한 단서를 골라내고, 다른 사람이 바로 알아보기 어려운 구조를 설명해요.','자료가 더 있어야 움직일 수 있다고 느끼면 작은 실험의 기회를 놓칠 수 있어요.','함께 관심사를 탐구하거나 서로 혼자 있는 시간을 존중해 주는 관계에서 친밀감을 느껴요.','요구가 한꺼번에 몰리면 일정을 비우고 대화를 미루며 혼자 생각을 정리하고 싶어질 수 있어요.','준비가 절반 정도 됐을 때 초안을 한 사람에게 보여 주고 실제 피드백을 받아 보세요.','혼자 있고 싶을 때 돌아올 시각을 함께 전해 보세요. 내 공간도 지키고 상대의 불확실성도 줄일 수 있어요.'],
+  q:['처음 보는 도구나 주제를 접하면 실제로 쓰기 전에 작동 원리부터 이해하고 싶다.','갑작스러운 부탁이 이어지면 내가 쓸 시간과 에너지가 얼마나 남았는지 먼저 가늠한다.','대화에서 아직 생각이 정리되지 않았을 때는 잠시 관찰하는 편이 편안하다.','관심 있는 문제가 생기면 혼자 자료를 모아 앞뒤가 맞는 설명이 나올 때까지 탐구하고 싶다.']},
+ {name:'충실가',tags:['신뢰','대비','책임'],summary:'미리 가능성을 점검하고 믿을 수 있는 토대를 만들어요.',
+  detail:['무언가 시작하기 전에 예상 밖의 상황을 그려 보고, 어려울 때 믿을 기준이나 사람을 찾는 편이에요.','불확실한 상황에서도 믿고 의지할 사람, 계획, 기준을 갖고 싶어요.','도움을 구할 곳 없이 판단하거나 갑자기 안전한 기반을 잃을까 봐 걱정해요.','위험을 미리 발견하고 약속을 지키며 비상시에도 팀이 움직일 계획을 준비해요.','확인하는 동안 새 의문이 계속 생길 수 있어요. 어떤 조건을 충족하면 결정을 마칠지 미리 정해 보세요.','예측 가능한 태도와 실제로 지킨 약속에서 신뢰를 쌓아요. 마음을 연 뒤에는 오랫동안 관계를 지키려 해요.','불확실성이 커지면 여러 사람에게 답을 확인하거나 모호한 말에서 위험 신호를 찾을 수 있어요.','우려를 사실과 가능성으로 나누고, 바로 확인할 수 있는 한 가지부터 점검해 보세요.','작은 결정을 내릴 때 내 판단의 근거를 먼저 써 보세요. 그다음 다른 사람의 의견을 참고해 보세요.'],
+  q:['약속 장소나 일정이 바뀌면 문제가 생길 경우의 대안부터 생각한다.','정해진 절차를 따르기 전에 그 절차를 만든 사람이나 근거를 얼마나 믿을 수 있는지 살핀다.','중요한 판단이 애매하면 신뢰하는 사람에게 내 생각을 한번 확인하고 싶다.','팀에서 역할이 분명하지 않으면 일이 꼬였을 때 서로 어떻게 도울지 미리 정하고 싶다.']},
+ {name:'열정가',tags:['자유','호기심','유연함'],summary:'새로운 가능성을 발견하고 일상에 활기를 더해요.',
+  detail:['하나의 상황에서도 여러 갈래의 선택지를 떠올려요. 생각과 사람을 새로 연결하는 일이 즐겁고 일정에 여지가 있을 때 힘이 나요.','다양한 경험을 선택하고 흥미로운 가능성을 계속 탐색하고 싶어요.','답답한 상황에 갇혀 선택의 여지가 없거나 불편함이 계속될까 봐 걱정해요.','기존 계획이 막히면 새로운 대안을 만들고, 가라앉은 분위기에 활력을 불어넣어요.','흥미가 옮겨 가면 마무리와 후속 약속이 밀릴 수 있어요. 동시에 진행할 일을 제한해 보세요.','함께 새 경험을 만들 때 관계가 살아나요. 친구가 어려운 얘기를 꺼내면 분위기를 바꾸기 전에 충분히 들어 보세요.','불편함이 이어지면 다음 계획으로 생각을 돌리거나 약속을 많이 잡아 현재 문제를 미룰 수 있어요.','새로 시작하고 싶은 일이 떠오를 때 지금 하던 일의 완료 조건부터 살펴보세요.','즐거웠던 순간을 서둘러 지나가기 전에 무엇이 좋았는지 구체적으로 두 가지 적어 보세요.'],
+  q:['하루가 비면 한 가지를 정하기 전에 해 보고 싶은 활동이 여러 개 떠오른다.','한 방식만 오랫동안 따라야 한다고 생각하면 새로운 선택지를 확보하고 싶어진다.','기분이 가라앉을 때 가까운 미래의 재미있는 계획부터 생각하는 편이다.','시작한 일에 익숙해질 무렵에는 다른 프로젝트에서 얻을 새로운 경험이 더 선명하게 느껴진다.']},
+ {name:'도전자',tags:['자율','결단','보호'],summary:'필요한 목소리를 내고 스스로 결정할 권리를 지켜요.',
+  detail:['누가 결정할 수 있는지, 경계가 존중되는지 빠르게 살펴요. 불분명한 상황에 직접 개입해 문제를 움직이는 편이에요.','자기 삶의 결정권을 지키고 필요할 때 자신과 가까운 사람을 보호하고 싶어요.','다른 사람이 일방적으로 통제하거나 약한 처지를 이용할까 봐 걱정해요.','모두가 주저하는 순간에도 입장을 표현하고 책임이 필요한 결정을 맡을 수 있어요.','단호한 말투가 상대에게 이미 내려진 결정처럼 들릴 수 있어요. 의사를 말한 뒤 상대의 의견을 물어 보세요.','솔직하게 부딪칠 수 있는 사람과 신뢰를 쌓아요. 가까운 사이일수록 실질적인 도움으로 애정을 표현할 수 있어요.','위협을 느끼면 속도를 높여 대화를 주도하거나 취약한 감정을 분노로 표현할 수 있어요.','즉시 해결하고 싶은 순간에도 한 차례 질문을 던져, 상대가 상황을 어떻게 보는지 들어 보세요.','믿을 만한 사람에게 요즘 힘든 일과 받고 싶은 도움을 각각 한 문장씩 이야기해 보세요.'],
+  q:['누군가 내 의견을 묻지 않은 채 내 몫까지 정하면 바로 내 입장을 밝히고 싶다.','모임에서 힘이 약한 사람에게 무리한 요구가 가면 문제를 직접 제기하고 싶다.','불확실한 상황에서는 내가 통제할 수 있는 결정부터 잡아야 마음이 놓인다.','갈등이 길어질 때 중요한 문제를 돌려 말하기보다 핵심을 꺼내 빠르게 논의하고 싶다.']},
+ {name:'평화주의자',tags:['수용','조율','안정'],summary:'다른 관점을 함께 담고 관계의 균형을 살펴요.',
+  detail:['사람마다 다른 사정이 있다는 점을 자연스럽게 알아차려요. 긴장한 분위기에서 서로 대화를 계속할 여지를 만들어요.','주위 사람들과 연결된 상태에서 안정과 평온을 느끼고 싶어요.','대립으로 소중한 관계가 멀어지거나 안정된 일상이 깨질까 봐 걱정해요.','상대의 말을 충분히 듣고, 서로 다른 의견에서 각자가 동의할 수 있는 부분을 발견해요.','모두의 의견을 먼저 듣다 보면 내 선호를 모르게 되거나 나중에 일이 부담스러워질 수 있어요.','함께 있을 때 평가받지 않는다는 느낌을 주기 쉬워요. 동의 여부를 말해 주면 상대가 편안함과 동의를 혼동하지 않아요.','갈등이 이어질 때 익숙한 활동에 몰입하거나 중요한 선택을 잠시 미뤄 마음을 가라앉힐 수 있어요.','작은 약속부터 내 선호를 먼저 말하고, 이견이 생겼을 때도 대화를 이어갈 수 있는지 경험해 보세요.','여러 사람이 메뉴를 고를 때 “나는 이게 좋아”라고 한 번 말해 보세요. 가벼운 결정이 연습에 좋아요.'],
+  q:['의견이 갈리면 내 입장보다 각자가 왜 그렇게 말하는지부터 살핀다.','내 선호를 말해 분위기가 어색해질 것 같으면 상대가 원하는 쪽에 맞추기 쉽다.','문제를 바로 이야기하면 대립이 커질 것 같을 때는 분위기가 가라앉기를 기다린다.','서로 다른 사람이 함께 있을 때 모두가 편해질 공통점을 자연스럽게 찾는다.']}
+];
+
+const wings = {
+ '1w9':'원칙을 일관되게 지키되 속도를 조절하고 다른 의견이 들어올 공간을 만들어요. 절차를 바꿀 때 조용히 합의점을 찾는 방식이 편할 수 있어요.',
+ '1w2':'원칙을 사람에게 직접 도움이 되는 방식으로 실천하고 싶어 해요. 잘못된 절차를 발견하면 영향을 받은 사람 옆에서 개선을 추진하기 쉬워요.',
+ '2w1':'돌봄을 꾸준한 책임으로 받아들여요. 약속한 지원을 오래 이어가는 힘이 있고, 자기 휴식에도 같은 책임감을 적용해 볼 수 있어요.',
+ '2w3':'사람을 돌보면서 도움의 결과가 실제로 달라지는지도 살펴요. 자원을 빠르게 모으고 여러 사람이 함께 성과를 내도록 북돋워 줄 수 있어요.',
+ '3w2':'사람들과 동력을 나누며 목표를 추진해요. 동료의 강점을 알아보고 인정해 주는 일이 성과를 이끄는 방식이 될 수 있어요.',
+ '3w4':'성과에 자신만의 관점이나 미감을 담고 싶어 해요. 결과물을 완성할 때도 어떤 성취가 내 가치와 어울리는지 생각하는 편이에요.',
+ '4w3':'섬세한 감각을 사람들이 만날 수 있는 작업이나 표현으로 구체화해요. 감정의 진정성과 전달 효과를 함께 살피는 편이에요.',
+ '4w5':'감정이 어디서 왔는지 혼자 탐구하고 말이나 작품을 오래 다듬어요. 표현하기 전 자신에게 충분한 시간과 공간을 주면 생각이 깊어져요.',
+ '5w4':'분석한 내용을 자신만의 취향과 상상력에 연결해요. 남이 놓치기 쉬운 주제를 고르고 독특한 방식으로 보여 주는 데 흥미를 느껴요.',
+ '5w6':'관찰한 내용을 믿을 만한 근거로 검증하고 비상 상황에도 쓸 수 있게 정리해요. 개인의 깊은 탐구가 팀의 판단에 쓰이기 쉬워요.',
+ '6w5':'준비 과정에서 자료와 독립적인 검토를 중요하게 여겨요. 근거가 명확해지면 조심스럽지만 긴 호흡으로 계획을 밀고 갈 수 있어요.',
+ '6w7':'안전을 점검하면서도 대화와 낙관적인 대안을 활용해요. 계획 변경을 함께 논의하고 유연한 대비책을 찾는 일이 편할 수 있어요.',
+ '7w6':'새로운 일을 함께 즐길 사람을 찾고 가능한 위험도 가볍게 점검해요. 부담을 줄이는 작은 준비가 오히려 자유롭게 시도할 힘을 줘요.',
+ '7w8':'아이디어가 떠오르면 결정권을 확보하고 직접 실험에 들어가요. 제약을 협상하고 추진하는 힘이 있으며, 동료의 속도를 살피면 협업이 편해져요.',
+ '8w7':'결단력에 빠른 실험과 유머가 더해져요. 장애물이 보이면 여러 돌파구를 동시에 떠올리고 새 기회를 앞장서 시도하기 쉬워요.',
+ '8w9':'평소에는 느긋하게 공간을 내주고 중요한 경계에서 힘을 써요. 소란을 키우지 않으면서도 필요한 개입을 끝까지 이어갈 수 있어요.',
+ '9w8':'관계의 평화를 살피면서도 핵심 경계는 직접 지켜요. 집단의 긴장을 완화하는 동시에 무시당하는 사람을 위해 목소리를 낼 수 있어요.',
+ '9w1':'갈등을 조율할 때 공정하고 일관된 약속을 만들려 해요. 차분하게 의견을 들어 주면서 다음에도 통할 규칙을 정하는 데 힘이 실려요.'
+};
+
+const people = [null,
+ [['넬슨 만델라','아파르트헤이트에 맞서 일관되게 평등을 추구한 활동을 개혁가의 원칙과 연결해 볼 수 있어요.'],['미셸 오바마','아동과 청소년의 건강·교육을 위한 공익 활동을 지속적인 개선 노력의 예로 읽을 수 있어요.']],
+ [['엘리너 루스벨트','세계인권선언 채택을 이끈 공적 활동에서 타인의 삶에 관심을 두고 지원하는 태도를 떠올릴 수 있어요.'],['돌리 파튼','어린이에게 책을 제공하는 문해 지원 활동을 타인의 필요를 구체적으로 돕는 예로 볼 수 있어요.']],
+ [['오프라 윈프리','방송 진행에서 제작과 미디어 사업으로 활동 범위를 넓힌 경력은 목표를 구체적 성과로 만드는 모습과 연결돼요.'],['마이클 조던','농구 선수로 최고 수준의 경기력을 꾸준히 추구한 모습에서 목표 지향성을 읽을 수 있어요.']],
+ [['프레데리크 쇼팽','피아노 소품에서 다채로운 정서를 표현한 음악은 섬세한 감정 표현을 떠올리게 해요.'],['버지니아 울프','소설에서 인물의 내면과 의식의 흐름을 독자적인 방식으로 그린 점이 이 유형의 표현력과 연결돼요.']],
+ [['알베르트 아인슈타인','공간과 시간에 대한 기존 가정을 다시 살펴본 연구는 개념의 구조를 탐구하는 태도를 떠올리게 해요.'],['제인 구달','침팬지의 행동을 오랫동안 현장에서 관찰한 연구가 탐구자의 집중과 관찰을 보여 주는 사례로 읽혀요.']],
+ [['톰 행크스','영화 《아폴로 13》에서 팀과 절차를 믿고 위기에 대응하는 인물을 연기한 모습은 충실가의 주제를 이해하는 데 도움이 돼요. 배역은 배우 본인의 성격을 보여 주는 근거가 아니에요.'],['다이애나 왕세자비','지뢰 피해 문제를 알리고 관련 단체와 협력한 활동을, 어려움에 놓인 이들과 연대하는 모습의 예로 볼 수 있어요.']],
+ [['벤저민 프랭클린','글쓰기, 과학 실험, 외교를 넘나든 활동 이력은 다양한 가능성에 관심을 기울이는 모습을 보여 줘요.'],['아멜리아 에어하트','새로운 항공 기록에 도전한 여정은 미지의 경험에 뛰어드는 기질을 떠올리게 해요.']],
+ [['프랭클린 D. 루스벨트','대공황 시기에 뉴딜 정책을 추진한 공개 활동에서 어려운 상황에 직접 개입하는 결단을 읽을 수 있어요.'],['리하르트 바그너','작곡과 무대 연출을 아우르는 오페라 구상을 밀고 나간 이력은 자신의 방향을 강하게 추진하는 모습과 닿아요.']],
+ [['칼 로저스','상담에서 공감적 이해와 수용을 강조한 접근이 평화주의자의 관계 태도를 떠올리게 해요.'],['클로드 모네','같은 풍경을 여러 시간대에 그린 연작은 익숙한 장면 속의 조용한 변화와 균형을 관찰하는 모습으로 읽을 수 있어요.']]
+];
+
+
+
+const portraits = [null,
+  [["mandela.jpg","© copyright John Mathew Smith 2001","CC BY-SA 2.0","https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994.jpg","https://creativecommons.org/licenses/by-sa/2.0"],["michelle-obama.jpg","Official White House Photo by Chuck Kennedy","Public domain","https://commons.wikimedia.org/wiki/File:Michelle_Obama_2013_official_portrait.jpg",null]],
+  [["eleanor-roosevelt.jpg","FDR Presidential Library & Museum","CC BY 2.0","https://commons.wikimedia.org/wiki/File:Eleanor_Roosevelt_at_the_United_Nations,_circa_1946-1947_(3x4_cropped).jpg","https://creativecommons.org/licenses/by/2.0"],["dolly-parton.jpg","David Gahr","Public domain","https://commons.wikimedia.org/wiki/File:Young-Dolly-Parton_(higher_quality_scan)_(cropped).jpg",null]],
+  [["oprah-winfrey.jpg","US Embassy South Africa","Public domain","https://commons.wikimedia.org/wiki/File:Oprah_Winfrey_2016.jpg",null],["michael-jordan.jpg","DOD photo by D. Myles Cullen","Public domain","https://commons.wikimedia.org/wiki/File:Michael_Jordan_in_2014.jpg",null]],
+  [["chopin.jpg","Louis-Auguste Bisson","Public domain","https://commons.wikimedia.org/wiki/File:Frederic_Chopin_photo.jpeg",null],["virginia-woolf.jpg","George Charles Beresford / Adam Cuerden","Public domain","https://commons.wikimedia.org/wiki/File:George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg",null]],
+  [["einstein.jpg","Oren Jack Turner","Public domain","https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head_cleaned.jpg",null],["jane-goodall.jpg","U.S. Department of State from United States","Public domain","https://commons.wikimedia.org/wiki/File:Deputy_Secretary_Higginbottom_Poses_for_a_Photo_With_Dr._Jane_Goodall_and_the_State_Department%27s_Global_Health_Diplomacy_Director_Jordan_in_Washington_(22365513310)_(2)_(cropped_2).jpg",null]],
+  [["tom-hanks.jpg","Raph_PH","CC BY 2.0","https://commons.wikimedia.org/wiki/File:TomHanksPrincEdw031223_(11_of_41)_(cropped).jpg","https://creativecommons.org/licenses/by/2.0"],["princess-diana.jpg","John Mathew Smith & www.celebrity-photos.com from Laurel Maryland, USA ( Archived link)","CC BY-SA 2.0","https://commons.wikimedia.org/wiki/File:Diana,_Princess_of_Wales_1997_(2).jpg","https://creativecommons.org/licenses/by-sa/2.0"]],
+  [["benjamin-franklin.jpg","Joseph-Siffred Duplessis","Public domain","https://commons.wikimedia.org/wiki/File:Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg",null],["amelia-earhart.jpg","Underwood & Underwood (active 1880 – c. 1950) [1]","Public domain","https://commons.wikimedia.org/wiki/File:Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra,_small_(cropped).jpg",null]],
+  [["franklin-roosevelt.jpg","Leon Perskie","CC BY 2.0","https://commons.wikimedia.org/wiki/File:FDR-1944-Campaign-Portrait_(3x4_retouched,_cropped).jpg","https://creativecommons.org/licenses/by/2.0"],["richard-wagner.jpg","Franz Hanfstaengl","Public domain","https://commons.wikimedia.org/wiki/File:RichardWagner.jpg",null]],
+  [["carl-rogers.jpg","The original uploader was Didius at Dutch Wikipedia .","CC BY 2.5","https://commons.wikimedia.org/wiki/File:Carl_Ransom_Rogers.jpg","https://creativecommons.org/licenses/by/2.5"],["claude-monet.jpg","Nadar","Public domain","https://commons.wikimedia.org/wiki/File:Claude_Monet_1899_Nadar_crop.jpg",null]]
+];
+const escapePortraitText = value => value.replace(/[&<>"']/g, char =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[char]
+);
+
+function personCard([name,text], photo) {
+  const label = escapePortraitText(name);
+  const fallback = '<span class="person-placeholder" aria-hidden="true">' + label + '</span>';
+  let image = '';
+  let credit = '';
+  if (photo) {
+    const [file,author,license,source,terms] = photo;
+    const link = (url,label) => '<a href="' + escapePortraitText(url) +
+      '" target="_blank" rel="noopener noreferrer">' + escapePortraitText(label) + '</a>';
+    const licenseLabel = ({'Public domain':'퍼블릭 도메인','CC0':'CC0 1.0'})[license] || license;
+    image = '<img src="assets/people/' + file + '" alt="' + label +
+      ' 인물 이미지" decoding="async" data-person-photo>';
+    credit = '<p class="person-credit">이미지 · ' + escapePortraitText(author) + '<br>' +
+      link(source,'Wikimedia Commons 원본') + ' · ' + (terms ? link(terms,licenseLabel) : escapePortraitText(licenseLabel)) +
+      '<br>화면에서 세로 비율로 잘라 표시</p>';
+  }
+  return '<article class="card person-card"><div class="person-media">' + fallback + image +
+    '</div><div><span class="pill">제3자 추정</span><h3>' + label + '</h3><p>' +
+    escapePortraitText(text) + '</p>' + credit + '</div></article>';
+}
+
+const typeOrder = [
+ [5,2,8,4,9,3,6,1,7],[3,6,9,1,7,4,8,5,2],
+ [8,4,1,6,2,7,5,9,3],[7,9,6,5,1,8,2,3,4]
+];
+const questions = typeOrder.flatMap((order, round) =>
+ order.map(type => ({type, text:types[type].q[round]}))
+);
+const scale = ['전혀 그렇지 않다','그렇지 않다','보통이다','그렇다','매우 그렇다'];
+const extraPrompts = [
+ '일이 순조롭게 풀릴 때 가장 지키고 싶은 것은 무엇인가요?',
+ '일이 뜻대로 풀리지 않을 때 어떤 걱정이 가장 먼저 드나요?',
+ '최근에 내렸던 중요한 결정에서 가장 가까운 동기는 무엇이었나요?',
+ '지난 몇 달 동안 마음에 오래 남았던 장면은 어떤 쪽에 가까웠나요?'
+];
+const motives = [null,
+ ['내가 옳다고 믿는 기준을 지킬 수 있는 상태','중요한 잘못을 내가 지나치지는 않았을까?','나중에도 납득할 수 있는 방식으로 처리하고 싶었다.','작은 오류라도 정리하고 나서야 마음이 놓였던 순간'],
+ ['주변 사람과 도움을 주고받는 따뜻한 관계','상대에게 내가 여전히 소중한 사람일까?','그 사람이 부담을 덜고 지낼 수 있으면 좋겠다고 생각했다.','내가 건넨 관심이나 도움이 상대에게 닿았던 순간'],
+ ['내 역량이 구체적인 결과로 이어지는 상태','내가 기대한 만큼 해낼 수 있을까?','분명한 목표에 도달하고 내 기여를 확인하고 싶었다.','한동안 노력한 일이 눈에 보이는 성과로 이어졌던 순간'],
+ ['내 감정과 정체성을 진솔하게 표현할 여지','내 마음이나 고유한 면이 제대로 전해졌을까?','나한테 개인적으로 의미 있는 선택을 하고 싶었다.','내 경험의 복잡한 결을 누군가 알아주었던 순간'],
+ ['이해하고 집중할 수 있는 충분한 시간과 공간','준비가 부족한 상태에서 감당하게 되지는 않을까?','내가 이해한 근거를 가지고 독립적으로 판단하고 싶었다.','혼자 탐구하던 문제의 구조를 마침내 파악했던 순간'],
+ ['믿을 만한 기준과 예상치 못한 상황에 대한 대비','문제가 생기면 무엇을 믿고 누구에게 도움을 청할 수 있을까?','믿을 만한 근거와 상황이 바뀌었을 때의 대안을 확보하고 싶었다.','함께 정한 대비책이나 약속 덕분에 안심했던 순간'],
+ ['새로운 경험을 선택하고 방향을 바꿀 자유','선택지가 사라져 답답한 상황에 갇히지는 않을까?','흥미로운 경험을 열어 두고 나에게 맞는 길을 찾아보고 싶었다.','하나의 계획이 멈춘 뒤 새로운 가능성이 여럿 보였던 순간'],
+ ['나와 가까운 사람들의 경계를 스스로 지킬 힘','다른 사람이 내 몫의 결정까지 쥐고 흔들지는 않을까?','필요한 입장을 말하고 결정권을 지키고 싶었다.','불편해도 경계를 분명히 말하고 상황을 움직였던 순간'],
+ ['서로의 차이를 품을 수 있는 안정적인 관계','갈등이 계속되어 중요한 관계가 멀어지지는 않을까?','관계를 지키며 모두가 받아들일 수 있는 길을 찾고 싶었다.','엇갈린 의견이 정리되어 함께 편안해졌던 순간']
+];
+
+
+const key = 'inner9.v1';
+const $ = selector => document.querySelector(selector);
+const all = selector => [...document.querySelectorAll(selector)];
+const ids = types.slice(1).map((_, index) => index + 1);
+const fresh = () => ({index:0, answers:Array(36).fill(null), base:null, method:null, extra:[], wingExtra:[]});
+let storageOk = true;
+let state = {run:null, result:null};
+try {
+  const stored = JSON.parse(localStorage.getItem(key));
+  if (stored && typeof stored === 'object') state = {run:stored.run ?? null, result:stored.result ?? null};
+} catch {
+  storageOk = false;
+}
+let resumeGate = Boolean(state.run);
+const flow = $('#flow');
+const nav = $('#nav');
+const menu = $('.menu');
+const testingViews = ['test','result'];
+const landingSections = ['home','about','types','how'];
+
+function persist() {
+  try {
+    if (state.run || state.result) localStorage.setItem(key, JSON.stringify(state));
+    else localStorage.removeItem(key);
+    storageOk = true;
+  } catch {
+    storageOk = false;
+  }
+  $('#storage-status').textContent = storageOk ? '' : '브라우저 저장소를 사용할 수 없어 이 탭을 새로고침하면 검사 데이터가 사라질 수 있어요.';
+  all('[data-saved]').forEach(link => link.hidden = !state.result);
+}
+
+function score(answers) {
+  const scores = Array(10).fill(0);
+  questions.forEach(({type}, index) => { scores[type] += answers[index]; });
+  return scores;
+}
+const normalized = raw => (raw - 4) / 16 * 100;
+const scoreText = raw => normalized(raw).toLocaleString('ko-KR', {maximumFractionDigits:2});
+const neighbors = type => [type === 1 ? 9 : type - 1, type === 9 ? 1 : type + 1];
+
+function highest(candidates, values) {
+  const maximum = Math.max(...candidates.map(type => values[type]));
+  return candidates.filter(type => values[type] === maximum);
+}
+
+function voted(candidates, answers) {
+  const counts = Array(10).fill(0);
+  answers.forEach(type => { counts[type]++; });
+  return highest(candidates, counts);
+}
+
+function questionState(candidates, answers, isWing) {
+  const count = extraPrompts.length;
+  if (answers.length < count) return {kind:'extra', candidates, index:answers.length, count, isWing};
+  const winners = voted(candidates, answers);
+  if (winners.length > 1) return {kind:'pick', candidates:winners, isWing};
+  return {kind:'winner', type:winners[0]};
+}
+
+function advance() {
+  const run = state.run;
+  if (run.answers.some(value => value === null)) return {kind:'main'};
+  const scores = score(run.answers);
+  if (!run.base) {
+    const tied = highest(ids, scores);
+    if (tied.length === 1) {
+      run.base = tied[0];
+      run.method = 'score';
+    } else {
+      const comparison = questionState(tied, run.extra, false);
+      if (comparison.kind !== 'winner') return comparison;
+      run.base = comparison.type;
+      run.method = 'extra';
+    }
+    persist();
+  }
+  const wingScores = highest(neighbors(run.base), scores);
+  if (wingScores.length === 1) return {kind:'complete', wing:wingScores[0], wingMethod:'score'};
+  const comparison = questionState(wingScores, run.wingExtra, true);
+  if (comparison.kind === 'winner') return {kind:'complete', wing:comparison.type, wingMethod:'extra'};
+  return comparison;
+}
+
+function finish(wing, wingMethod) {
+  const run = state.run;
+  state.result = {base:run.base, wing, method:run.method, wingMethod, scores:score(run.answers)};
+  state.run = null;
+  resumeGate = false;
+  persist();
+  showRoute('result');
+}
+
+const detailHTML = (type, indexes) => '<dl>' + indexes.map(index =>
+  '<dt>' + detailLabels[index] + '</dt><dd>' + type.detail[index] + '</dd>'
+).join('') + '</dl>';
+
+function renderLanding() {
+  $('#type-cards').innerHTML = ids.map(id => {
+    const type = types[id];
+    return '<article class="card type-card"><h3><span class="number">' + id + '</span>' + type.name +
+      '</h3><p>' + type.summary + '</p><div class="tags">' + type.tags.map(tag => '<span>' + tag + '</span>').join('') +
+      '</div><button type="button" class="btn quiet" data-type="' + id + '" aria-label="' + id + '번 ' + type.name +
+      ' 자세히 보기">자세히 보기 →</button></article>';
+  }).join('');
+  const points = [9, ...ids.slice(0,8)].map((id,index) => {
+    const angle = index * 2 * Math.PI / 9 - Math.PI / 2;
+    return [id,165 + 120 * Math.cos(angle),155 + 120 * Math.sin(angle)];
+  });
+  const line = order => order.map(id => points.find(point => point[0] === id).slice(1).join(',')).join(' ');
+  $('#wheel').innerHTML =
+    '<circle cx="165" cy="155" r="143" fill="none" stroke="#d9caef" stroke-dasharray="2 6"/>' +
+    '<circle cx="165" cy="155" r="120" fill="#f9f5ff" fill-opacity=".68" stroke="#cfbdeb"/>' +
+    '<polygon points="' + line([9,3,6]) + '" fill="none" stroke="#a488d4" stroke-width="1.5"/>' +
+    '<polygon points="' + line([1,4,2,8,5,7]) + '" fill="none" stroke="#b49bdd" stroke-width="1.5"/>' +
+    '<circle cx="165" cy="155" r="41" fill="#f9f5ff" stroke="#ded0f0"/>' +
+    '<text x="165" y="160" text-anchor="middle" fill="#5134a0" font-size="18" font-weight="800">Inner9</text>' +
+    points.map(([id,x,y]) => '<g><circle cx="' + x + '" cy="' + y + '" r="16" fill="' +
+      (id === 9 ? '#5e42b7' : '#ffffff') + '" stroke="#c4afe8"/><text x="' + x + '" y="' + (y+1) +
+      '" dominant-baseline="middle" text-anchor="middle" fill="' + (id === 9 ? '#fff' : '#5134a0') +
+      '" font-size="14" font-weight="800">' + id + '</text></g>').join('');
+}
+
+function setScreen(content, report = false) {
+  flow.innerHTML = '<div class="' + (report ? 'report' : 'flow-inner') +
+    '"><a class="btn quiet home-link" href="#home">← 홈으로</a>' + content + '</div>';
+  const title = flow.querySelector('h1');
+  title.id = 'view-title';
+  title.tabIndex = -1;
+  flow.setAttribute('aria-labelledby', title.id);
+  $('.skip').href = '#view-title';
+  title.focus({preventScroll:true});
+  window.scrollTo({top:0, behavior:'instant'});
+}
+
+function option(text, value, selected = false) {
+  return '<label class="option"><input type="radio" name="choice" value="' + value +
+    '"' + (selected ? ' checked' : '') + '><span>' + text + '</span></label>';
+}
+
+function renderStart() {
+  const count = state.run?.answers.filter(value => value !== null).length ?? 0;
+  setScreen('<div class="panel"><header><h1>에니어그램 성격유형 검사</h1><p>' +
+    (state.run ? '진행 중인 검사가 있어요. ' + count + '/36문항에 응답했어요.' :
+    '36문항 · 약 5–7분. 평소 나의 모습에 가장 가까운 답을 골라 주세요.') +
+    '</p></header><div class="actions report-section">' +
+    (state.run ? '<button class="btn primary" type="button" data-action="resume">이어하기</button>' : '') +
+    '<button class="btn ' + (state.run ? 'secondary' : 'primary') + '" type="button" data-action="start">' +
+    (state.run ? '새로 시작하기' : '첫 문항 시작하기') + '</button>' +
+    (state.result ? '<a href="#result" class="btn quiet">저장된 결과 다시 보기</a>' : '') + '</div></div>');
+}
+
+function renderMain() {
+  const run = state.run;
+  const index = run.index;
+  const last = index === questions.length - 1;
+  const count = run.answers.filter(value => value !== null).length;
+  setScreen('<section class="panel"><header><h1>에니어그램 성격유형 검사</h1></header>' +
+    '<div class="step-info"><span>문항 ' + (index+1) + ' / 36</span><span id="answered">' + count +
+    '개 응답</span></div><div class="track" id="progress" role="progressbar" aria-label="응답 진행률" aria-valuemin="0" aria-valuemax="36" aria-valuenow="' +
+    count + '"><div class="fill" style="width:' + (count/36*100) + '%"></div></div>' +
+    '<form data-form="main"><fieldset class="options"><legend>' + questions[index].text + '</legend>' +
+    scale.map((label,i) => option((i+1) + ' · ' + label, i+1, run.answers[index] === i+1)).join('') +
+    '</fieldset><div class="actions flow-actions"><button class="btn secondary" type="button" data-action="prev"' +
+    (index === 0 ? ' disabled' : '') + '>← 이전 질문</button><button class="btn primary" type="submit"' +
+    (run.answers[index] === null ? ' disabled' : '') + '>' + (last ? '결과 보기' : '다음 질문 →') +
+    '</button></div></form></section>');
+}
+
+function renderComparison(step) {
+  const {candidates, index, count, isWing} = step;
+  const manual = step.kind === 'pick';
+  const run = state.run;
+  const subject = isWing ? '날개유형' : '기본 유형';
+  const heading = manual ? '나에게 가까운 ' + subject + ' 선택' : isWing ? '날개유형 구분을 위한 추가 질문' : '유형 구분을 위한 추가 질문';
+  const countText = manual ? '' : '<p class="small">추가 질문 ' + (index+1) + ' / ' + count + '</p>';
+  const prompt = manual ? '지금의 나에게 더 가까운 설명을 골라 주세요.' : extraPrompts[index];
+  const ordered = manual ? candidates : candidates.slice(index % candidates.length).concat(candidates.slice(0,index % candidates.length));
+  setScreen('<section class="panel"><header><h1>' + heading + '</h1><p>' + (manual ?
+    '추가 응답도 같았어요. 후보들의 설명을 읽고 이번 리포트에서 참고할 유형을 선택할 수 있어요.' :
+    '후보들의 점수가 같아요. 최근 경험에 비추어 더 가까운 답을 골라 주세요. 이 질문은 자기탐색을 돕는 참고 단계예요.') +
+    '</p></header>' + countText + '<form data-form="' + (manual ? 'pick' : 'extra') +
+    '"><fieldset class="options"><legend>' + prompt + '</legend>' + ordered.map(id => {
+      const description = isWing ? wings[run.base + 'w' + id] : types[id].summary + ' ' + types[id].detail[1];
+      return option(manual ? (isWing ? run.base + 'w' + id + ' · ' + types[id].name + ' 날개' :
+        id + '번 ' + types[id].name) + ' — ' + description : motives[id][index], id);
+    }).join('') + '</fieldset><div class="actions flow-actions"><button class="btn secondary" type="button" data-action="back-comparison">← 이전으로</button>' +
+    '<button class="btn primary" type="submit" disabled>' + (manual ? '선택 완료' : '응답 제출 →') +
+    '</button></div></form></section>');
+}
+
+function renderTest() {
+  if (!state.run || resumeGate) return renderStart();
+  // The final response is persisted before advancing, so it remains editable on reload.
+  if (state.run.index < 35 || !state.run.submitted) return renderMain();
+  const step = advance();
+  if (step.kind === 'complete') finish(step.wing, step.wingMethod);
+  else if (step.kind === 'main') renderMain();
+  else renderComparison(step);
+}
+
+function renderResult() {
+  if (!state.result) {
+    setScreen('<div class="panel"><h1>저장된 결과가 없어요</h1><p>36문항 검사를 마치면 결과를 이 브라우저에서 다시 볼 수 있어요.</p><div class="actions report-section"><a class="btn primary" href="#test">검사 화면으로 →</a></div></div>', true);
+    return;
+  }
+  const {base, wing, method, wingMethod, scores} = state.result;
+  const type = types[base];
+  const code = base + 'w' + wing;
+  const sorted = [...ids].sort((a,b) => scores[b] - scores[a] || Number(b === base) - Number(a === base) || a - b);
+  const top = sorted.slice(0,3);
+  const cutoffTie = scores[sorted[2]] === scores[sorted[3]];
+  const methodText = {score:'기본 검사에서 가장 높은 원점수를 받은 유형',extra:'동점 후보 중 추가 질문에서 더 많이 선택한 유형',manual:'추가 자기탐색을 통해 선택한 유형'}[method];
+  const wingText = {score:'인접 유형 중 원점수가 높은 쪽',extra:'동점인 인접 유형 중 추가 응답이 더 가까웠던 쪽',manual:'두 인접 유형의 설명을 비교해 직접 고른 쪽'}[wingMethod];
+  setScreen('<header class="report-head"><p class="eyebrow">검사 완료</p><h1>' + code + '<span>' + base + '번 ' + type.name +
+    ' · ' + types[wing].name + ' 날개</span></h1><p class="summary">' + type.summary +
+    '</p><p class="small">대표 유형 선정 방법 · ' + methodText + '<br>날개 선정 방법 · ' + wingText +
+    '</p><p class="small">이 결과는 현재 응답을 바탕으로 한 자기탐색 자료예요. 같은 사람도 상황과 시기에 따라 다르게 응답할 수 있어요.</p></header>' +
+    '<section class="report-section" aria-labelledby="scores-title"><h2 id="scores-title">9가지 유형별 점수</h2><div class="panel">' +
+    '<h3>상위 3개 유형</h3><div class="top-three">' + top.map(id => '<div class="card"><b>' + id + '번 ' + types[id].name +
+    '</b><p>' + scoreText(scores[id]) + '점' + (id === base ? ' · 대표' : '') + '</p></div>').join('') +
+    '</div>' + (cutoffTie ? '<p class="small">3개를 표시하는 경계에 동점이 있어요. 표시 순서는 대표 유형을 먼저, 나머지는 번호 순으로 정리했어요.</p>' : '') +
+    sorted.map(id => '<div class="score-row"' + (id === base ? ' data-main' : '') + (top.includes(id) ? ' data-top' : '') +
+      '><span>' + id + '번 ' + types[id].name + (id === base ? '<span class="small"> · 대표</span>' : '') +
+      '</span><div class="track" aria-hidden="true"><div class="fill" style="width:' + normalized(scores[id]) +
+      '%"></div></div><b>' + scoreText(scores[id]) + '</b></div>').join('') +
+    '<p class="small">0–100 환산점수 · (원점수 − 4) ÷ 16 × 100. 응답 경향을 나타내는 수치이며 확률이나 백분위로 해석할 수 없어요.</p></div></section>' +
+    '<section class="report-section" aria-labelledby="detail-title"><h2 id="detail-title">나의 성향 자세히 보기</h2><div class="duo">' +
+    [...type.detail.slice(0,8).map((text,i) => [detailLabels[i],text]), ['날개유형의 영향',wings[code]], [detailLabels[8],type.detail[8]]]
+      .map(([title,text]) => '<article class="card"><h3>' + title + '</h3><p>' + text + '</p>' +
+        (title === '날개유형의 영향' ? '<p class="small">자체 제작 검사의 응답을 바탕으로 추정한 날개유형</p>' : '') + '</article>').join('') +
+    '</div></section><section class="report-section" aria-labelledby="people-title"><h2 id="people-title">이 유형의 예시로 언급되는 인물</h2>' +
+    '<div class="duo people-grid">' + people[base].map((person,index) => personCard(person,portraits[base][index])).join('') + '</div>' +
+    '<p class="notice small">아래 출처의 유형 예시 목록에 실린 인물이에요. 본인이 공개한 유형으로 확인된 사례는 포함하지 않았어요. 카드 설명은 공개 활동과 유형 특징을 연결한 해석이에요. <a href="https://www.enneagraminstitute.com/type-' +
+    base + '/" target="_blank" rel="noopener noreferrer">출처 · 에니어그램 인스티튜트 ' + base + '번 유형</a></p></section>' +
+    '<div class="report-section actions"><button class="btn primary" type="button" data-action="start">다시 검사하기</button><a class="btn secondary" href="#home">홈으로 돌아가기</a></div>', true);
+}
+
+function closeMenu() {
+  nav.classList.remove('open');
+  menu.setAttribute('aria-expanded','false');
+}
+
+function highlight(id) {
+  all('#nav a').forEach(link => {
+    if (link.hash === '#' + id) link.setAttribute('aria-current','location');
+    else link.removeAttribute('aria-current');
+  });
+}
+
+function route() {
+  closeMenu();
+  const id = location.hash.slice(1) || 'home';
+  if (id === 'view-title') return;
+  const inFlow = testingViews.includes(id);
+  $('#landing').hidden = inFlow;
+  flow.hidden = !inFlow;
+  if (inFlow) {
+    highlight('test');
+    if (id === 'test') renderTest();
+    else renderResult();
+    return;
+  }
+  $('.skip').href = '#home';
+  highlight(id);
+  const target = document.getElementById(id);
+  if (landingSections.includes(id) && target) requestAnimationFrame(() => {
+    if (id === 'home') window.scrollTo({top:0});
+    else target.scrollIntoView();
+  });
+}
+
+function showRoute(id) {
+  if (location.hash === '#' + id) route();
+  else location.hash = id;
+}
+
+menu.addEventListener('click', () => menu.setAttribute('aria-expanded', String(nav.classList.toggle('open'))));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && nav.classList.contains('open')) {
+    closeMenu();
+    menu.focus();
+  }
+});
+nav.addEventListener('click', event => {
+  const link = event.target.closest('a');
+  if (!link) return;
+  closeMenu();
+  if (location.hash === link.hash) route();
+});
+window.addEventListener('hashchange', route);
+let queued = false;
+window.addEventListener('scroll', () => {
+  if (!flow.hidden || queued) return;
+  queued = true;
+  requestAnimationFrame(() => {
+    queued = false;
+    if (!flow.hidden) return;
+    const reached = landingSections.filter(id => document.getElementById(id).getBoundingClientRect().top <= 112);
+    const bottom = scrollY + innerHeight >= document.documentElement.scrollHeight - 3;
+    highlight(bottom ? 'how' : reached.at(-1) || 'home');
+  });
+}, {passive:true});
+
+document.addEventListener('click', event => {
+  const typeButton = event.target.closest('button[data-type]');
+  if (typeButton) {
+    const id = Number(typeButton.dataset.type);
+    $('#dialog-title').textContent = id + '번 ' + types[id].name;
+    $('#dialog-body').innerHTML = detailHTML(types[id],[1,2,3,4,5,7]);
+    $('#type-dialog').showModal();
+    return;
+  }
+  const button = event.target.closest('button[data-action]');
+  if (!button) return;
+  switch (button.dataset.action) {
+    case 'start':
+      if ((state.run || state.result) && !confirm('새 검사를 시작할까요? 진행 중인 응답은 초기화되며, 최근 결과는 새 검사를 마칠 때까지 보관돼요.')) return;
+      state.run = fresh();
+      resumeGate = false;
+      persist();
+      showRoute('test');
+      break;
+    case 'resume':
+      resumeGate = false;
+      renderTest();
+      break;
+    case 'prev':
+      state.run.index--;
+      persist();
+      renderMain();
+      break;
+    case 'back-comparison': {
+      const run = state.run;
+      const step = advance();
+      if (step.isWing && run.wingExtra.length) run.wingExtra.pop();
+      else if (!step.isWing && run.extra.length) run.extra.pop();
+      else {
+        run.submitted = false;
+        run.base = null;
+        run.method = null;
+        run.extra = [];
+        run.wingExtra = [];
+      }
+      persist();
+      renderTest();
+      break;
+    }
+    case 'clear':
+      if (!confirm('진행 중인 검사와 최근 결과를 이 브라우저에서 삭제할까요?')) return;
+      state = {run:null, result:null};
+      resumeGate = false;
+      persist();
+      if (!flow.hidden) showRoute('home');
+      break;
+  }
+});
+
+flow.addEventListener('error', event => {
+  if (event.target.matches?.('[data-person-photo]')) event.target.hidden = true;
+}, true);
+
+flow.addEventListener('change', event => {
+  const form = event.target.closest('form[data-form]');
+  if (!form || event.target.name !== 'choice') return;
+  form.querySelector('button[type="submit"]').disabled = false;
+  if (form.dataset.form !== 'main') return;
+  const run = state.run;
+  run.answers[run.index] = Number(event.target.value);
+  persist();
+  const count = run.answers.filter(value => value !== null).length;
+  $('#answered').textContent = count + '개 응답';
+  $('#progress').setAttribute('aria-valuenow',count);
+  $('#progress .fill').style.width = (count/36*100) + '%';
+});
+
+flow.addEventListener('submit', event => {
+  const form = event.target.closest('form[data-form]');
+  if (!form) return;
+  event.preventDefault();
+  const run = state.run;
+  const choice = Number(new FormData(form).get('choice'));
+  if (form.dataset.form === 'main') {
+    if (run.answers[run.index] === null) return;
+    if (run.index < 35) run.index++;
+    else run.submitted = true;
+    persist();
+    renderTest();
+    return;
+  }
+  const step = advance();
+  if (!step.candidates?.includes(choice)) return;
+  if (form.dataset.form === 'extra') {
+    (step.isWing ? run.wingExtra : run.extra).push(choice);
+  } else if (step.isWing) {
+    finish(choice,'manual');
+    return;
+  } else {
+    run.base = choice;
+    run.method = 'manual';
+  }
+  persist();
+  renderTest();
+});
+
+renderLanding();
+persist();
+route();
+</script>
+</body>
+</html>
+
+
+
